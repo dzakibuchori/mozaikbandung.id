@@ -319,7 +319,7 @@
 		display: block;
 	}
 
-	.snapwidget-desktop-bg
+	.snapwidget-desktop-bg	
 	{
 		display: none;
 	}
@@ -342,7 +342,7 @@
 		color: white;
 		background: #E41D22;
 		opacity: 100;
-		z-index: 1;
+		z-index: 0;
 	}
 
 	.booking_container
@@ -400,8 +400,7 @@
 	}
 	.section_title h1
 	{
-		margin-top: -14px;
-		font-size: 24px;
+		font-size: 45px;
 	}
 	.section_title div
 	{

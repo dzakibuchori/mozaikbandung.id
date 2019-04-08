@@ -317,18 +317,19 @@ section
 }
 .section_title h1
 {
-	position: relative;
-	font-size: 36px;
-	font-weight: 400;
-	color: #150f24;
-	z-index: 1;
-	margin-top: -20px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 86px;
+		font-weight: bold;
+		color: #303471;
+		line-height: 0.75;
+		z-index: 0;
+	    max-width: fit-content;
+	    margin-left: auto;
+	    margin-right: auto;
 }
 .section_title > div
 {
-	/*font-family: 'Playfair Display', serif;*/
 	font-family: 'Source Sans Pro', sans-serif;
-	/*font-style: italic;*/
 	font-size: 86px;
 	font-weight: bold;
 	color: #303471;
@@ -908,7 +909,7 @@ section
 	color: white;
 	background: #E41D22;
 	opacity: 0;
-	z-index: 1;
+	z-index: 0;
 	transition: all .4s ease-out;
 }
 .umroh-package:hover {

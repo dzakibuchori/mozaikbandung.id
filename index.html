@@ -13,7 +13,15 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
 <link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/floating-wpp.min.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#ff0000">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -139,7 +147,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<div>Tentang Kami</div>
+						<div><h1>Tentang Kami</h1></div>
 					</div>
 				</div>
 			</div>
@@ -282,7 +290,7 @@
 			</div>
 		</div>
 	</div>
-
+	<div id="myButton"></div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
 <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
@@ -297,20 +305,23 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="plugins/jquery-datepicker/jquery-ui.js"></script>
 <script src="js/custom.js"></script>
-<!-- WhatsHelp.io widget -->
+<script src="js/floating-wpp.min.js"></script>
+<!-- Whatsapp widget -->
 <script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+628226570687", // WhatsApp number
-            call_to_action: "Mau tanya-tanya dulu? Gratis!", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '+6282226570687',
+            popupMessage: 'Assalamu\'alaikum, apa ada yang bisa saya bantu ?',
+            message: "Saya ingin menanyakan tentang...",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Assalamu\'alaikum!',
+            headerColor: '#25d366',
+            backgroundColor: '#25d366',
+            buttonImage: '<img src="images/whatsapp.svg" />'
+        });
+    });
 </script>
-<!-- /WhatsHelp.io widget -->
+<!-- /Whatsapp widget -->
 </body>
 </html>
