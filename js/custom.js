@@ -90,6 +90,7 @@ $(document).ready(function()
 			var menu = $('.menu');
 			var hamburger = $('.hamburger');
 			var nav_mobile = $('.nav_mobile');
+			var buttonHp = $('.button_hp');
 
 			hamburger.on('click', function()
 			{
@@ -97,6 +98,11 @@ $(document).ready(function()
 			});
 
 			nav_mobile.on('click', function()
+			{
+				menu.toggleClass('active');
+			});
+			
+			buttonHp.on('click', function()
 			{
 				menu.toggleClass('active');
 			});
@@ -383,7 +389,7 @@ $(document).ready(function()
 			umrohPackage.on('click', function()
 			{
 				var alt = $(this).children("img").attr("alt");
-				window.open('https://api.whatsapp.com/send?phone=628226570687&text=Hi%20admin%20saya%20mau%20tanya%20tentang%20'+'\"'+alt+'\"');
+				window.open('https://api.whatsapp.com/send?phone=6282226570687&text='+"Assalamu'alaikum"+',%20saya%20mau%20tanya%20tentang%20'+'\"'+alt+'\"');
 			});
 
 		}
