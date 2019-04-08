@@ -25,7 +25,7 @@
 ***********/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -315,22 +315,12 @@ section
 {
 	color: #E41D22;
 }
-.section_title h1
-{
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 86px;
-		font-weight: bold;
-		color: #303471;
-		line-height: 0.75;
-		z-index: 0;
-	    max-width: fit-content;
-	    margin-left: auto;
-	    margin-right: auto;
-}
+
 .section_title > div
 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 86px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	letter-spacing: 5px;
 	font-weight: bold;
 	color: #303471;
 	line-height: 0.75;
