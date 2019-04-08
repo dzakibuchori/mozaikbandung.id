@@ -389,7 +389,7 @@ $(document).ready(function()
 			umrohPackage.on('click', function()
 			{
 				var alt = $(this).children("img").attr("alt");
-				window.open('https://api.whatsapp.com/send?phone=6282226570687&text='+"Assalamu'alaikum"+',%20saya%20mau%20tanya%20tentang%20'+'\"'+alt+'\"');
+				window.open('https://api.whatsapp.com/send?phone=6282129292252&text='+"Assalamu'alaikum"+',%20saya%20mau%20tanya%20tentang%20'+'\"'+alt+'\"');
 			});
 
 		}
